@@ -62,7 +62,7 @@ const Navbar = () => {
                         WebkitBackgroundClip: 'text',
                         WebkitTextFillColor: 'transparent'
                     }}>
-                        FitAI
+                        AuraFit
                     </span>
                 </Link>
 

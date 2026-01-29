@@ -28,7 +28,7 @@ createRoot(document.getElementById('root')).render(
           animation: 'spin 1s linear infinite',
           margin: '0 auto 1rem auto'
         }} />
-        <p style={{ fontFamily: 'Plus Jakarta Sans', fontWeight: '500' }}>Initializing FitAI...</p>
+        <p style={{ fontFamily: 'Plus Jakarta Sans', fontWeight: '500' }}>Initializing AuraFit...</p>
         <style>{`
           @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
         `}</style>
