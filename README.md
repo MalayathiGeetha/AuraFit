@@ -18,7 +18,23 @@ The project is built using a microservices pattern, ensuring scalability, resili
 - **AuraFit Web**: A premium, glassmorphic UI built with React, Redux Toolkit, and Framer Motion.
 - **Authentication**: Secure OIDC flow integrated with Keycloak (PKCE).
 
-## 🛠️ Tech Stack
+## � Screenshots
+
+### 🏠 Landing Page
+The entry point for users, featuring a personalized welcome message and secure authentication options.
+![Landing Page](screenshots/landing_page.png)
+
+### 📊 User Dashboard
+A centralized hub for logging new activities and viewing a history of fitness sessions.
+![Dashboard](screenshots/dashboard.png)
+
+### 🧠 AI Insights & Activity Details
+Deep dives into specific activities with AI-generated recommendations, improvements, and safety guidelines.
+![Activity Details](screenshots/activity_details.png)
+![AI Recommendations](screenshots/ai_insights.png)
+![Safety Guidelines](screenshots/safety_guidelines.png)
+
+## �🛠️ Tech Stack
 - **Backend**: Java 17+, Spring Boot 3, Spring Cloud, Spring Data MongoDB, RabbitMQ.
 - **Frontend**: React 19, Vite, Redux Toolkit, Material UI, Framer Motion, Lucide Icons.
 - **Infrastructure**: Keycloak (Auth), MongoDB (Database), RabbitMQ (Messaging).
