@@ -1,0 +1,43 @@
+spring:
+  main:
+    web-application-type: reactive
+  application:
+    name: gateway
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          # jwk-set-uri: http://localhost:8181/realms/fitness_realm/protocol/openid-connect/certs
+          issuer-uri: http://localhost:8181/realms/fitness_realm
+  cloud:
+    gateway:
+      routes:
+
+        - id: user-service
+          uri: lb://USER-SERVICE
+          predicates:
+            - Path=/api/users/**
+          filters:
+            - StripPrefix=0
+
+        - id: activity-service
+          uri: lb://ACTIVITY-SERVICE
+          predicates:
+            - Path=/api/activities/**
+          filters:
+            - StripPrefix=0
+
+        - id: ai-service
+          uri: lb://AI-SERVICE
+          predicates:
+            - Path=/api/recommendations/**
+          filters:
+            - StripPrefix=0
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+server:
+  port: 8089
